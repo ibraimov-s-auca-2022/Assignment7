@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://cdn.imgchest.com/files/myd5crddq4b.png);
+  background-repeat: no-repeat;
+  max-width: 1143px;
+  min-height: 1583px;
+  font-size: 2rem;
+  opacity: 0.5;
+  color: blue;
+}
+.container > * {
+  border: 2px dashed blue;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 65px 295px 435px 340px 60px;
+  grid-template-columns: 300px 570px 370px;
+
+  grid-template-areas:
+    "one six six"
+    "two two two"
+    "tree tree seven"
+    "four four four"
+    "five five five";
+}
+
+.box1 {
+  grid-area: one;
+}
+
+.box2 {
+  grid-area: two;
+}
+
+.box3 {
+  grid-area: tree;
+}
+
+.box4 {
+  grid-area: four;
+}
+
+.box5 {
+  grid-area: five;
+}
+
+.box6 {
+  grid-area: six;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.menu {
+  padding-top: 25px;
+  padding-right: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  flex-basis: 459px;
+  height: 5px;
+  gap: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black;
+}
+.menu .pill {
+  padding: 10px 40px; /* внутренние отступы */
+  border: 2px solid white; /* белая рамка */
+  border-radius: 9999px; /* делает “капсулу” */
+  line-height: 1; /* аккуратная высота */
+  cursor: pointer;
+}
+.box7 {
+  grid-area: seven;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "one"
+      "six"
+      "two"
+      "three"
+      "sevem"
+      "four"
+      "five";
+  }
+}
