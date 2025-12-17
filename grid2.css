@@ -66,11 +66,10 @@ body {
   flex-basis: 459px;
   height: 5px;
   gap: 20px;
-  font-family: "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
-  color: black;
+  color: white;
 }
 .menu .pill {
   padding: 10px 40px;
