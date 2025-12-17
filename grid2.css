@@ -73,10 +73,10 @@ body {
   color: black;
 }
 .menu .pill {
-  padding: 10px 40px; /* внутренние отступы */
-  border: 2px solid white; /* белая рамка */
-  border-radius: 9999px; /* делает “капсулу” */
-  line-height: 1; /* аккуратная высота */
+  padding: 10px 40px;
+  border: 2px solid white;
+  border-radius: 9999px;
+  line-height: 1;
   cursor: pointer;
 }
 .box7 {
